@@ -10,5 +10,11 @@
     "build:dev": "yarn clean && tsc -p . && yarn start",
     "start": "node dist/index.js"
   },
-  "dependencies": {}
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "openai": "^3.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.11"
+  }
 }

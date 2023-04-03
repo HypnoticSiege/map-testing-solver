@@ -1,3 +1,6 @@
+import { Configuration, OpenAIApi } from "openai";
+require('dotenv').config()
+
 console.clear()
 console.log('MAP Testing Solver');
 
