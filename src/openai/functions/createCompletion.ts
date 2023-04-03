@@ -5,14 +5,8 @@ async function createCompletion(prompt: string) {
         model: "text-davinci-003",
         prompt: prompt,
     })
-        .then((response) => {
-            return response.data.choices[0].text;
-        })
-        .catch((error) => {
-            console.log(error);
-        });
     
-    return completion;
+    return completion.data.choices[0].text as string || "";
 }
 
 export default createCompletion;
