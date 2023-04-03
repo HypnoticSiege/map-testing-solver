@@ -1,0 +1,14 @@
+{
+  "name": "map-testing-solver",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "HypnoticSiege <luis@hypnoticsiege.net>",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "yarn clean && tsc -p .",
+    "build:dev": "yarn clean && tsc -p . && yarn start",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {}
+}
