@@ -8,6 +8,8 @@ async function main() {
     console.log(`---------------------------------`);
     console.log(`[INFO] Starting Express Server...`);
     await require('./app');
+    console.log(`[INFO] Starting WebSocket Server...`);
+    await require('./sockets');
 }
 
 main();
