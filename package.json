@@ -16,6 +16,7 @@
     "migrate:dev": "yarn prisma migrate dev"
   },
   "dependencies": {
+    "@prisma/client": "4.12.0",
     "body-parser": "^1.20.2",
     "crypto": "^1.0.1",
     "dotenv": "^16.0.3",
