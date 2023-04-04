@@ -7,5 +7,15 @@ socket.onerror = (error) => { console.log('Error connecting to WebSocket Server'
 socket.onmessage = (message) => {
     const data = JSON.parse(message.data);
     console.log(data);
-
 };
+
+document.getElementById('submit').addEventListener('click', (e) => {
+    e.preventDefault();
+
+    let question = document.getElementById('question').value;
+
+    socket.send(JSON.stringify({
+        action: 'solve',
+        question: question
+    }));
+});
