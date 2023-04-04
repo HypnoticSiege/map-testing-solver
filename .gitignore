@@ -125,4 +125,6 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
 prisma/generated
+public/css/output.css
