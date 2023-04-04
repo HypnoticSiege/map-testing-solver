@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html lang="en" class="bg-white">
+	<%- include('./partials/metadata') %>
+    <body class="min-h-screen">
+        <%- include('./partials/navbar') %>
+        <section class="p-5 text-black max-w-lg">
+            <h1 class="text-3xl font-bold">
+                Question Solver:
+            </h1>
+            <small>This system uses Artifical Intelligence and is not right 100% of the time. Please not that this system does not guarantee a perfect answer.</small>
+
+            <form class="">
+                <div class="form-control">
+                    <label class="label">
+                        <span class="label-text text-gray-950 italic">Your questions HTML:</span>
+                    </label>
+                    <textarea class="textarea textarea-bordered h-24 bg-gray-100" placeholder="Paste element here..."></textarea>
+                </div>
+                <div class="form-control mt-6">
+                    <button class="btn bg-primary-600 text-white hover:bg-primary-800 border-none" type="submit">Submit</button>
+                </div>
+            </form>
+            
+            <form class="output mt-8">
+                <div class="form-control">
+                    <label class="label">
+                        <span class="label-text text-gray-950 italic">Output Answer:</span>
+                    </label>
+                    <textarea class="textarea textarea-bordered h-24 bg-gray-100" placeholder="Output will go here."></textarea>
+                </div>
+            </form>
+        </section>
+    </body>
+</html>
