@@ -1,0 +1,21 @@
+generator client {
+  provider      = "prisma-client-js"
+  output        = "./generated"
+  binaryTargets = ["native"]
+  engineType    = "binary"
+}
+
+datasource db {
+  provider = "sqlite"
+  url = "file:./maptesting.db"
+}
+
+model users {
+  id        Int      @id @unique @default(autoincrement())
+  email     String   @unique
+  password  String   
+  passwordSalt String
+  username  String   @unique
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
