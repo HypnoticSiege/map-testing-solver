@@ -1,5 +1,5 @@
-import createCompletion from "./createCompletion";
+import createChatCompletion from "./createChatCompletion";
 
 export default {
-    createCompletion,
+    createChatCompletion,
 };

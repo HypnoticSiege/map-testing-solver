@@ -11,8 +11,8 @@ async function main() {
 
     console.log(utils.stripHTML(question));
 
-    //const completion = await openai.createCompletion(question);
-    //console.log(completion);
+    const completion = await openai.createChatCompletion(question);
+    console.log(completion);
     
     console.log('All Done!')
 }
