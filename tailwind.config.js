@@ -4,28 +4,52 @@ module.exports = {
         "./views/**/*.{ejs,html,js}",
         "./views/*.{ejs,html,js}"
     ],
+    
     theme: {
-        extend: {},
+        extend: {
+            colors: {
+                primary: {"50":"#eff6ff","100":"#dbeafe","200":"#bfdbfe","300":"#93c5fd","400":"#60a5fa","500":"#3b82f6","600":"#2563eb","700":"#1d4ed8","800":"#1e40af","900":"#1e3a8a"}
+            }
+        },
     },
     plugins: [
         require("daisyui")
     ],
 
-    daisyui: {
-        themes: [
-            {
-                mytheme: {
-                    "primary": "#1089FF",        
-                    "secondary": "#009EFF",
-                    "accent": "#7cc4f2",
-                    "neutral": "#8dd1fc",
-                    "base-100": "#2A303C",
-                    "info": "#31E1F7",
-                    "success": "#16a34a",
-                    "warning": "#f59e0b",
-                    "error": "#FA1616",
-                },                    
-            }
+    fontFamily: {
+        'body': [
+            'Inter', 
+            'ui-sans-serif', 
+            'system-ui', 
+            '-apple-system', 
+            'system-ui', 
+            'Segoe UI', 
+            'Roboto', 
+            'Helvetica Neue', 
+            'Arial', 
+            'Noto Sans', 
+            'sans-serif', 
+            'Apple Color Emoji', 
+            'Segoe UI Emoji', 
+            'Segoe UI Symbol', 
+            'Noto Color Emoji'
+        ],
+        'sans': [
+            'Inter', 
+            'ui-sans-serif', 
+            'system-ui', 
+            '-apple-system', 
+            'system-ui', 
+            'Segoe UI', 
+            'Roboto', 
+            'Helvetica Neue', 
+            'Arial', 
+            'Noto Sans', 
+            'sans-serif', 
+            'Apple Color Emoji', 
+            'Segoe UI Emoji', 
+            'Segoe UI Symbol', 
+            'Noto Color Emoji'
         ]
     }
 }
