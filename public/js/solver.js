@@ -7,6 +7,10 @@ socket.onerror = (error) => { console.log('Error connecting to WebSocket Server'
 socket.onmessage = (message) => {
     const data = JSON.parse(message.data);
     console.log(data);
+
+    if (data.type === 'solve') {
+        document.getElementById('answer').value = data.message;
+    }
 };
 
 document.getElementById('submit').addEventListener('click', (e) => {
