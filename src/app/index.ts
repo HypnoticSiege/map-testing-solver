@@ -4,7 +4,7 @@ import session from 'express-session';
 import passport from 'passport';
 import { Strategy as LocalStrategy } from 'passport-local';
 import prisma from '../prisma';
-import { registerUser, isAuth, authCallback } from './controllers/auth.controller';
+import { registerUser, isAuth, authCallback } from './modules/auth.controller';
 import path from 'node:path';
 
 const port = 3000;
