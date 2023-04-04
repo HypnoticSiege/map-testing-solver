@@ -6,6 +6,7 @@ import { Strategy as LocalStrategy } from 'passport-local';
 import prisma from '../prisma';
 import { registerUser, isAuth, authCallback } from './modules/auth.controller';
 import path from 'node:path';
+import utils from '../utils';
 
 const port = 3000;
 const app = express()
@@ -29,6 +30,9 @@ express.static(path.join(__dirname, "./public"));
 
 app.get('/', async function (req, res) {
     res.render('index')
+});
+app.get('/solver', async function (req, res) {
+    res.render('solver')
 });
 app.get('/login', async function (req, res) {
     res.render('login')
