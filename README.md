@@ -22,5 +22,11 @@ MAP Testing is an online platform for educators and schools to test a student's 
 7. Open a browser and go to `localhost:3000`
 8. You're done!
 
+## Roadmap
+- [x] Add account creation and login (DB already exists and is connected)
+- [x] Add a way to save questions and answers/cache them
+- [x] Add a way to view saved questions and answers
+- [x] Billing system w/ Stripe ($10 per test; lasts a week)
+
 ## Contributing
 If you want to contribute to this project, please fork the repository and make a pull request. It will be reviewed and merged depending on the quality of the code and the usefulness of the feature.
