@@ -3,6 +3,7 @@
 
 ## About
 MAP Testing is an online platform for educators and schools to test a student's benchmarks in mutliple different subjects like math and English in their respective levels. MAP auto adjusts to your responses. This tool is meant to help students solve problems on the MAP Testing platform.
+![Preview](repoassets/preview.png)
 
 ## How to use
 1. Install and run the program (instructions below; cloud-hosted version coming soon)
