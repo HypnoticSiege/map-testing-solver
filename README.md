@@ -7,7 +7,7 @@ MAP Testing is an online platform for educators and schools to test a student's 
 ## How to use
 1. Install and run the program (instructions below; cloud-hosted version coming soon)
 2. Click the "Solve Question".
-3. Copy and paste the question into the text box on top.
+3. Copy and paste the question into the text box on top. (You'll need to copy the `supplementalContentCell` div and the `prompt` cell into the text box)
 4. Click "Submit".
 5. Wait for the answer to appear in the text box below.
 6. Woo! You're done!
