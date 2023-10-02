@@ -1,6 +1,6 @@
 import * as WebSocket from 'ws';
 import fs from 'node:fs';
-const port = 8080;
+const port = 3001;
 const server = new WebSocket.Server({ port: port });
 const helpers = fs.readdirSync('dist/sockets/helpers');
 

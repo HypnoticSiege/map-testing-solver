@@ -1,10 +1,10 @@
-let socket = new WebSocket('ws://localhost:8080');
+let socket = new WebSocket('ws://localhost:3001');
 
 socket.onopen = () => { console.log('Connected to WebSocket Server') };
 socket.onclose = () => {
     console.log('Disconnected from WebSocket Server')
     setTimeout(() => {
-        socket = new WebSocket('ws://localhost:8080');
+        socket = new WebSocket('ws://localhost:3001');
     });
 };
 socket.onerror = (error) => { console.log('Error connecting to WebSocket Server', error) };
